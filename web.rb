@@ -13,6 +13,6 @@ get '/quote' do
 	File.read(File.join('public', 'quote.html'))
 end
 
-get '/logo.png' do
+get '/assets/img/logo.png' do
 	File.read(File.join('public/assets/img', 'logo.png'))
 end
