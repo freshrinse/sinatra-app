@@ -13,8 +13,8 @@ end
 #	File.read(File.join('public', 'quote.html'))
 #end
 
-get '/:url' do
-	File.read(File.join('public', '#{params[:url]}'))
+get '/:url' do |u|
+	File.read(File.join('public', '#{u}'))
 end
 
 get '/logo.png' do
