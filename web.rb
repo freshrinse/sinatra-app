@@ -2,7 +2,7 @@ require 'sinatra'
 
 
 get '/' do
-	File.read(File.join('public', 'index.html'))
+	File.read(File.join('public', 'maintenancy.html'))
 end
 
 get '/about' do
