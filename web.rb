@@ -18,11 +18,11 @@ get '/logo.png' do
 end
 
 get '/style.css' do
-	File.read(File.join('public/assets/css/', 'style.css'))
+	File.read(File.join('public/assets/css', 'style.css'))
 end
 get '/bootstrap.min.css' do
-	File.read(File.join('public/assets/css/', 'bootstrap.min.css'))
+	File.read(File.join('public/assets/css', 'bootstrap.min.css'))
 end
 get '/bootstrap-responsive.min.css' do
-	File.read(File.join('public/assets/css/', 'bootstrap-responsive.min.css'))
+	File.read(File.join('public/assets/css', 'bootstrap-responsive.min.css'))
 end
