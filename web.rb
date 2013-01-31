@@ -14,5 +14,5 @@ get '/quote' do
 end
 
 get '/logo.png' do
-	File.read(File.join('public', 'logo.png'))
+	File.read(File.join('public/assets/img', 'logo.png'))
 end
