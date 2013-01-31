@@ -49,7 +49,7 @@
 						<li id="home-nav"><a href="./">
 							Home
 						</a></li>
-						<li id="about-nav" class="active"><a href="#">
+						<li id="about-nav"><a href="./about">
 							About
 						</a></li>
 						<li id="contact-nav" class="dropdown">
@@ -76,17 +76,28 @@
 			</div>
 			<!-- end navigation -->
 		
+			<!-- begin quote -->
+			<script src="http://code.jquery.com/jquery-latest.js"></script>
+			<script src="assets/js/quote.js"></script>
 
-			<!-- begin description -->
-			<h3>About Us</h3>
-			<p>
-				We off great service! More to come
-			</p>
-			<a href="./quote">Get a Free Quote</a>
-			
-			<!-- end description -->
-
-
+			<div id="quote"></div>
+			<br />
+			List the sizes of the rooms you wish to be cleaned
+			<br /><br />
+			<div id="rooms">
+				<div id="room1">
+					<input id="width1" type="text" value="Width">
+					&nbsp;feet by <input id="length1" type="text" value="Length">&nbsp;feet
+					&nbsp;<button class="btn" onclick="removeRoom(1);"><i class="icon-minus"></i></button>
+					<br />
+				</div>
+			</div>
+			<br />
+			<button class="btn" onclick="addRoom();"><i class="icon-plus"></i></button>
+			<br />
+			<br />
+			<button class="btn" onclick="validateForm();">Get Quote!</button>
+			<!-- end quote -->
 			<hr>
 
 
@@ -104,7 +115,7 @@
 					<!-- begin facebook like button -->
 					<div class="fb-like" data-href="http://www.facebook.com/pages/Fresh-Rinse-Carpet-Upholstery-Cleaners/234408693307617?fref=ts" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
 					<!-- end facebook like button -->
-
+					
 				</span>
 				<span class="pull-left">
 					Fresh Rinse Carpet and Upholstery Cleaners<br />
@@ -120,7 +131,8 @@
 		</div>
 	</div>
 
-	<script src="assets/js/jquery.js"></script>
+	<!--<script src="assets/js/jquery.js"></script>-->
+	<!-- jquery included earlier -->
 	<script src="assets/js/bootstrap.plugins.js"></script>
 </body>
 </html>
