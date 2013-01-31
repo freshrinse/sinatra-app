@@ -5,12 +5,16 @@ get '/' do
 	File.read(File.join('public', 'index.html'))
 end
 
-get '/about' do
-	File.read(File.join('public', 'about.html'))
-end
+#get '/about' do
+#	File.read(File.join('public', 'about.html'))
+#end
+#
+#get '/quote' do
+#	File.read(File.join('public', 'quote.html'))
+#end
 
-get '/quote' do
-	File.read(File.join('public', 'quote.html'))
+get '/:url' do
+	File.read(File.join('public', '#{params[:url]}'))
 end
 
 get '/logo.png' do
