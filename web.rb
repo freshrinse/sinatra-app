@@ -17,6 +17,12 @@ get '/logo.png' do
 	File.read(File.join('public/assets/img', 'logo.png'))
 end
 
-get '/([\w]+).css' do |c|
-	File.read(File.join('public/assets/css/', '#{c}'))
+get '/style.css' do
+	File.read(File.join('public/assets/css/', 'style.css'))
+end
+get '/bootstrap.min.css' do
+	File.read(File.join('public/assets/css/', 'bootstrap.min.css'))
+end
+get '/bootstrap-responsive.min.css' do
+	File.read(File.join('public/assets/css/', 'bootstrap-responsive.min.css'))
 end
