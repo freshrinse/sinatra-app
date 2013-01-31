@@ -1,0 +1,29 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Supporting marketing content */
+.box {
+  margin: 60px 0;
+}
+.box p + h4 {
+  margin-top: 28px;
+}
+
+#brand {
+	height:50px;
+}
+
+.error {
+	color:#FF0000;
+}
