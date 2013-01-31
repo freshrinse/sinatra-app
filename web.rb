@@ -17,6 +17,6 @@ get '/logo.png' do
 	File.read(File.join('public/assets/img', 'logo.png'))
 end
 
-get '/style.css' do
-	File.read(File.join('public/assets/css/', 'style.css'))
+get '/([\w]+).css' do |c|
+	File.read(File.join('public/assets/css/', '#{c}'))
 end
