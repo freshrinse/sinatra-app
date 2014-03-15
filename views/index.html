@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Fresh Rinse Carpet Cleaning</title>
+	<title>Fresh Rinse - Carpet and Upholstery Cleaners</title>
+	<link rel="shortcut icon" href="./assets/icon.ico"/>
+	<meta name="description" content="Proudly serving the community for 24 years. We offer carpet and upholstery cleaning services in Santa Barbara, Goleta and Carpinteria. Satisfaction Guaranteed.">
+	<meta name="keywords" content="santa barbara, goleta, carpinteria, carpet cleaning, carpet and upholstery cleaning, carpet cleaners, carpet and upholstery cleaners, fresh rinse, fresh rinse cleaners, freshrinse.com, freshrinsecleaners.com">
+	<meta name="google-site-verification" content="qJdBA9rRFwdMhz4WUvEDT6uN6UMOTxgJIt5vsjDgz0Y" />
 
-	<link rel="shortcut icon" href="assets/icon.ico"/>
+	<link rel="shortcut icon" href="./assets/icon.ico"/>
 
 	<link href="assets/css/style.css" rel="stylesheet">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -35,6 +39,7 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 	<!-- end facebook javascript sdk -->
 
+
 	<div class="container-narrow">
 		<div class="masthead">
 
@@ -46,11 +51,11 @@
 					<img id="brand" class="brand" src="assets/img/logo.png">
 
 					<ul class="nav pull-right">
-						<li id="home-nav"><a href="./">
+						<li id="home-nav" class="active"><a href="#">
 							Home
 						</a></li>
-						<li id="services-nav"><a href="./services">
-							Services
+						<li id="about-nav"><a href="./about">
+							About
 						</a></li>
 						<li id="contact-nav" class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -71,30 +76,65 @@
 			</div>
 			<!-- end navigation -->
 		
-			<!-- begin quote -->
-			<script src="http://code.jquery.com/jquery-latest.js"></script>
-			<script src="assets/js/quote.js"></script>
 
-			<div id="quote"></div>
-			<br />
-			List the sizes of the rooms you wish to be cleaned
-			<br /><br />
-			<div id="rooms">
-				<div id="room1">
-					<input id="width1" type="text" value="Width">
-					&nbsp;feet by <input id="length1" type="text" value="Length">&nbsp;feet
-					&nbsp;<button class="btn" onclick="removeRoom(1);"><i class="icon-minus"></i></button>
-					<br />
+			<!-- begin carousel -->
+			<div id="myCarousel" class="carousel slide">
+				<!-- carousel items -->
+				<div class="carousel-inner">
+					<div class="active item">
+						<img src="assets/img/freshrinse001.png" alt>
+					</div>
+					<div class="item">
+
+					</div>
+					<div class="item">
+
+					</div>
 				</div>
+				<!-- Carousel nav -->
+				<!--
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				-->
 			</div>
-			<br />
-			<button class="btn" onclick="addRoom();"><i class="icon-plus"></i></button>
-			<br />
-			<br />
-			<button class="btn" onclick="validateForm();">Get Quote!</button>
-			<!-- end quote -->
+			<!-- end carousel -->
+
+
+
 			<hr>
 
+
+
+
+			<!-- begin grid -->
+			<div class="row-fluid box">
+				<div class="span4">
+					<h4>Great Service</h4>
+					<p>We promise satisfaction with any job!
+					<!--
+					<h4>Great Service</h4>
+					<p>"They came, they cleaned, they conquered. I'll never trust my carpets to any other cleaners again!"
+					<em class="pull-right">
+						-Customer&nbsp;&nbsp;&nbsp;
+					</em>
+					-->
+					</p>
+				</div>
+				<div class="span4">
+					<h4>Competitive Prices</h4>
+			        <p>Great for students! We aim to fit any budget. Get a free quote for your cleaning needs <a href="./quote">here</a>.</p>
+				</div>
+				<div class="span4">
+					<h4>Experienced Staff</h4>
+			        <p>24 years of experience in Santa Barbara, Goleta and Carpinteria.</p>
+				</div>
+			</div>
+			<!-- end grid -->
+			
+
+
+
+			<hr>
 
 
 
@@ -110,13 +150,16 @@
 					<!-- begin facebook like button -->
 					<div class="fb-like" data-href="http://www.facebook.com/pages/Fresh-Rinse-Carpet-Upholstery-Cleaners/234408693307617?fref=ts" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
 					<!-- end facebook like button -->
-					
+
 				</span>
 				<span class="pull-left">
+					
+
 					Fresh Rinse Carpet and Upholstery Cleaners<br />
 					Santa Barbara, CA<br />
 					(805)708-3367<br />
-					<a href="mailto:freshrinse@yahoo.com"> freshrinse2012@yahoo.com</a>
+					<a href="mailto:freshrinse@yahoo.com"> freshrinse2012@yahoo.com</a><br />
+					
 				</span>
 			</footer>
 			<!-- end footer -->
@@ -126,8 +169,17 @@
 		</div>
 	</div>
 
-	<!--<script src="assets/js/jquery.js"></script>-->
-	<!-- jquery included earlier -->
-	<script src="assets/js/bootstrap.plugins.js"></script>
+	<script src="/assets/js/jquery.js"></script>
+	<script src="/assets/js/bootstrap.plugins.js"></script>
+
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 </body>
 </html>
